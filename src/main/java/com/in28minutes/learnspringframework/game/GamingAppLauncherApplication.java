@@ -1,7 +1,5 @@
-package com.in28minutes.learnspringframework;
+package com.in28minutes.learnspringframework.game;
 
-import com.in28minutes.learnspringframework.game.GameRunner;
-import com.in28minutes.learnspringframework.game.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +13,5 @@ public class GamingAppLauncherApplication {
             context.getBean(GamingConsole.class).up();
             context.getBean(GameRunner.class).run();
         }
-
     }
 }
